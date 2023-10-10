@@ -1,0 +1,19 @@
+Display
+
+<Display>:
+    BoxLayout:
+        orientation: "vertical"
+        Label:
+            text: "Cute Chick with a Hat"
+        Image:
+            id: img
+            source: root.display_image()
+            size_hint: 1, 6
+            background_color: "white"
+        BoxLayout:
+            Button:
+                text: "<<<"
+                onclick: root.backwards()
+            Button:
+                text: ">>>"
+                onclick: root.advance()
